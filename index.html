@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,7 +23,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark p-3" id="navbar-head">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
-        <img src="./assets/img/logo.png" alt="headbrandlogo" width="25" height="25" class="d-inline-flex align-text-top" id="logo-head">
+        <img src="./assets/img/logo.png" alt="logo" width="25" height="25" class="d-inline-flex align-text-top" id="logo-head">
         <span class="fs-5 text-danger" id="texto-head">eGameShop</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,79 +92,159 @@
   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -----------------------------------------------------------------------INTRO-------------------------------------------------------------------------------------------------->
 
-  <section class="w-50 mx-auto text-center pt-4 pb-5" id="intro">
-    <h1 class="p-3 fs-2 border-top border-3 text-light">Tu <span class="text-danger">Tienda Online</span> para encontrar tus juegos favoritos al mejor precio.</h1>
-    <p class="p-3 fs-4 border-bottom border-3 text-light" ><span class="text-danger">eGameShop</span> es la mejor opcion de la actualidad.</p>
+  <section class="w-50 mx-auto text-center pt-5 pb-5" id="intro">
+    <h1 class="p-3 pt-5 fs-2 border-top border-3 border-secondary text-dark">Tu <span class="text-danger">Tienda Online</span> para encontrar tus juegos favoritos al mejor precio.</h1>
+    <p class="p-3 pb-5 fs-4 border-bottom border-3 border-secondary text-dark" ><span class="text-danger">eGameShop</span> es la mejor opcion de la actualidad.</p>
   </section>
 
   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -----------------------------------------------------------------------TRENDING-GAMES-------------------------------------------------------------------------------------------------->
-
-  <section class="text-start ps-5 pt-2 p-5" id="trending-items">
-    <h3 class="pt-2"><span class="text-danger fw-bold">Novedades Destacadas</span></h3>
-    <p class="fs-6 fw-bold"><span class="text-dark">Los lanzamientos mas recientes del mercado al alcance de tu mano.</span></p>
-      <main>
-        <div class="container">
+    
+    <div class="trending-intro">
+      <h3 class="pt-5"><span class="text-danger fw-bold">Novedades Destacadas</span></h3>
+      <p class="fs-6 fw-bold"><span class="text-dark">Los lanzamientos mas recientes del mercado al alcance de tu mano.</span></p>
+    </div>
+    <section class="text-start ps-5 pt-2 p-5" >
+      <main id="trending-items">
+        <div class="section">
           <div class="content">
             <img src="./assets/img/borderlands.jpg" alt="borderlands3">
-            <h3>Borderlands 3</h3>
+            <h3 class="card-title">Borderlands 3</h3>
             <p></p>
-            <h6>3800 ARS$</h6>
-            <ul>
+            <h6>3.399 ARS$</h6>
+            <ul class="card-list">
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star"></i></li>
             </ul>
-            <button class="buy-1">COMPRAR</button>
+            <button type="button" class="buy-1 btn btn-danger">COMPRAR</button>
           </div>
           <div class="content">
-            <img src="./assets/img/revillage.jpg" alt="borderlands3">
-            <h3>Borderlands 3</h3>
+            <img src="./assets/img/revillage.jpg" alt="revillage">
+            <h3 class="card-title">Resident Evil 8</h3>
             <p></p>
-            <h6>3800 ARS$</h6>
-            <ul>
+            <h6>2.299 ARS$</h6>
+            <ul class="card-list">
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
             </ul>
-            <button class="buy-1">COMPRAR</button>
+            <button type="button" class="buy-1 btn btn-danger">COMPRAR</button>
           </div>
           <div class="content">
-            <img src="./assets/img/dyinglight2.jpg" alt="borderlands3">
-            <h3>Borderlands 3</h3>
+            <img src="./assets/img/dyinglight2.jpg" alt="dyinglight2">
+            <h3 class="card-title">Dying Light 2</h3>
             <p></p>
-            <h6>3800 ARS$</h6>
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
+            <h6>1.920 ARS$</h6>
+            <ul class="card-list">
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
             </ul>
-            <button class="buy-1">COMPRAR</button>
+            <button type="button" class="buy-1 btn btn-danger">COMPRAR</button>
           </div>
           <div class="content">
-            <img src="./assets/img/eldenring.jpg" alt="borderlands3">
-            <h3>Borderlands 3</h3>
+            <img src="./assets/img/eldenring.jpg" alt="eldenring">
+            <h3 class="card-title">Elden Ring</h3>
             <p></p>
-            <h6>3800 ARS$</h6>
-            <ul>
+            <h6>4.000 ARS$</h6>
+            <ul class="card-list">
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
               <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
             </ul>
-            <button class="buy-1">COMPRAR</button>
+            <button type="button" class="buy-1 btn bg-danger">COMPRAR</button>
           </div>
         </div>
       </main>
   </section>
 
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------OFFERT-IMG-------------------------------------------------------------------------------------------------->
+
+  <section class="text-center">
+    <img src="./assets/img/offertmenu.jpg" alt="oferta" class="offert-menu">
+  </section>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------UPCOMING-GAMES-------------------------------------------------------------------------------------------------->
+  
+  <div class="trending-intro">
+    <h3 class="pt-5"><span class="text-danger fw-bold">Proximos Lanzamientos</span></h3>
+    <p class="fs-6 fw-bold"><span class="text-dark">Los lanzamientos mas recientes del mercado al alcance de tu mano.</span></p>
+  </div>  
+  <section class="text-start ps-5 pt-2 p-5">
+    <main class="next-games">
+      <div class="section">
+        <div class="content">
+          <img src="./assets/img/hoglegacy.jpg" alt="hoglegacy">
+          <h3 class="card-title">Hogwarts</h3>
+          <h3 class="card-titles">Legacy</h3>
+          <p></p>
+          <h6>3.399 ARS$</h6>
+          <ul class="card-list">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button type="button" class="buy-1 btn btn-danger">PRECOMPRAR</button>
+        </div>
+        <div class="content">
+          <img src="./assets/img/gothamknights.jpg" alt="gothknights">
+          <h3 class="card-title">Gotham</h3>
+          <h3 class="card-titles">Knights</h3>
+          <p></p>
+          <h6>4,999 ARS$</h6>
+          <ul class="card-list">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button type="button" class="buy-1 btn btn-danger">PRECOMPRAR</button>
+        </div>
+        <div class="content">
+          <img src="./assets/img/borderlands.jpg" alt="borderlands3">
+          <h3 class="card-title">Borderlands 3</h3>
+          <p></p>
+          <h6>3.399 ARS$</h6>
+          <ul class="card-list">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button type="button" class="buy-1 btn btn-danger">PRECOMPRAR</button>
+        </div>
+        <div class="content">
+          <img src="./assets/img/borderlands.jpg" alt="borderlands3">
+          <h3 class="card-title">Borderlands 3</h3>
+          <p></p>
+          <h6>3.399 ARS$</h6>
+          <ul class="card-list">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button type="button" class="buy-1 btn btn-danger">PRECOMPRAR</button>
+        </div>
+      </div>
+    </main>
+  </section>
 
   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -----------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------------->
@@ -177,7 +256,7 @@
           <img src="./assets/img/logo2.png" alt="footerbrandlogo">
         </div>
         <div class="terms">
-          <p class="fs-18 fw-normal text-light">El futuro de los videojuegos va más allá del entretenimiento, ¡y es un privilegio ayudar a darle forma! Estamos construyendo un marketplace seguro, asequible y sostenible para todos los jugadores de hoy y mañana.</p>
+          <p class="fs-18 fw-normal text-light">El mundo de los videojuegos va mucho más allá del entretenimiento, ¡y es un privilegio ayudar a darle forma! Estamos construyendo un marketplace seguro, accesible y sostenible para todos los jugadores.</p>
         </div>
       </div>
       <div class="box_footer">

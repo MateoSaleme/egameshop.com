@@ -1,5 +1,5 @@
 body {
-  background-color: #111111;
+  background-color: #dedede;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -89,10 +89,121 @@ footer .box_copyrights hr {
   background-size: cover;
 }
 
-#cards {
-  display: block;
-  margin: auto;
-  margin-top: 15px;
-  box-shadow: 1px;
+.card-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.card-titles {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.content {
+  width: auto;
+  margin: 40px;
   box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background: white;
+}
+
+.content:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transform: translate(0px, -8px);
+}
+
+h6 {
+  font-size: 26px;
+  text-align: center;
+  color: rgb(233, 10, 10);
+  margin: 0;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+.card-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  margin-right: 20px;
+}
+.card-list li {
+  padding: 5px;
+}
+
+.fa {
+  font-size: 26px;
+  transition: 0.4s;
+}
+
+.checked {
+  color: rgb(255, 146, 5);
+}
+
+.fa:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+
+.buy-1 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .content {
+    width: 85%;
+  }
+}
+.offert-menu {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.trending-intro {
+  margin-left: 50px;
+}
+
+.next-games {
+  background-image: url(../img/backgroundsection.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */

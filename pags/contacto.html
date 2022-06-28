@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | eGameShop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +18,7 @@
     -----------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------------------->
 
   <header class="container-fluid bg-danger d-flex justify-content-center" id="header">
-    <p class="text-light mb-0 p-2 fs-6">Tel: +54 9 351 341-8561</p>
+    <p class="text-light mb-0 p-2 fs-6 fw-bold">El futuro de los videojuegos, en un Marketplace.</p>
   </header>
   
   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,7 +27,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark p-3" id="navbar-head">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">
-        <img src="../img/logo.png" alt="logo" width="25" height="25" class="d-inline-flex align-text-top" id="logo-head">
+        <img src="../assets/img/logo.png" alt="logo" width="28" height="28" class="d-inline-flex align-text-top" id="logo-brand-head">
         <span class="fs-5 text-danger" id="texto-head">eGameShop</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +62,46 @@
     </div>
   </nav>
 
-  
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------FORMULARIO-------------------------------------------------------------------------------------------------->
+
+  <div class="container-form">
+    <h1 class="text-danger text-center" id="logo-form">Contacto</h1>
+    <div class="contact-wrap">
+      <div class="contact-form">
+        <h3 class="text-light text-center">Formulario de Contacto</h3>
+        <form action="">
+          <p>
+            <label for="fullname" class="text-light">Nombre</label>
+            <input type="text" name="fullname" id="fullname">
+          </p>
+          <p>
+            <label for="" class="text-light">Correo Electronico</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label for="" class="text-light">Teléfono</label>
+            <input type="tel" name="phone">
+          </p>
+          <p>
+            <label for="" class="text-light">Asunto</label>
+            <input type="text" name="asunto">
+          </p>
+          <p class="block">
+            <label for="" class="text-light">Mensaje</label>
+            <textarea name="message" rows="3" placeholder="Escriba aqui su mensaje"></textarea>
+          </p>
+          <p class="block">
+            <button type="submit">
+              ENVIAR
+            </button>
+          </p> 
+        </form>
+      </div>
+    </div>
+  </div>
+      
+   
 
   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -----------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------------->
@@ -68,21 +110,22 @@
     <div class="container_footer">
       <div class="box_footer">
         <div class="logo">
-          <img src="../img/logo2.png" alt="">
+          <img src="../assets/img/logo2.png" alt="footerbrandlogo" id="logo-foot">
         </div>
         <div class="terms">
-          <p class="fs-18 fw-normal text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="fs-18 fw-normal text-light">El mundo de los videojuegos va mucho más allá del entretenimiento, ¡y es un privilegio ayudar a darle forma! Estamos construyendo un marketplace seguro, accesible y sostenible para todos los jugadores de hoy y mañana.</p>
         </div>
       </div>
       <div class="box_footer">
         <h2 class="text-light">Redes Sociales</h2>
-        <a href="" class="text-secondary"> <i class="fa-brands fa-whatsapp-square"></i> Whatsapp</a>
-        <a href="" class="text-secondary"> <i class="fa-brands fa-instagram-square"></i> Instagram</a>
-        <a href="" class="text-secondary"> <i class="fa-brands fa-facebook-square"></i> Facebook</a>
+        <a href="https://twitter.com/SalemeMateo" class="text-secondary"> <i class="fa-brands fa-twitter-square"></i> Twitter</a>
+        <a href="https://www.facebook.com/matu.saleme/" class="text-secondary"> <i class="fa-brands fa-facebook-square"></i> Facebook</a>
+        <a href="https://www.instagram.com/mateo.saleme/" class="text-secondary"> <i class="fa-brands fa-instagram-square"></i> Instagram</a>
       </div>
       <div class="box_footer">
         <h2 class="text-light">Contacto</h2>
         <a href="./contacto.html"  class="text-secondary"> <i class="fa-solid fa-envelope-open-text"></i> Formulario</a>
+        <a href="https://api.whatsapp.com/send?phone=5493513418561&text=Vengo%20desde%20eGameShop.com,%20tengo%20una%20duda%20sobre..." class="text-secondary"> <i class="fa-brands fa-whatsapp-square"></i> Whatsapp</a>
       </div>
       <div class="box_footer">
         <h2 class="text-light">Conocenos</h2>
@@ -95,7 +138,9 @@
     </div>
   </footer>
   
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/3ac3391d4b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -8,7 +8,55 @@ a {
   text-decoration: none;
 }
 
-/*---------------------------Navbar de Bootstrap Personalizado----------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------MEDIA-QUERYS--------------------------------------------------------------------------------------------------*/
+@media (max-width: 1000px) {
+  .content {
+    width: 35%;
+  }
+
+  .offert-menu {
+    width: 85%;
+  }
+
+  .offert-menus {
+    width: 95%;
+  }
+}
+@media (max-width: 750px) {
+  .content {
+    width: 55%;
+  }
+
+  .offert-menu {
+    width: 85%;
+  }
+
+  .offert-menus {
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    width: 85%;
+  }
+
+  .contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1200px) {
+  .offert-menus {
+    width: 85%;
+  }
+
+  .offert-menu {
+    width: 85%;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------NAVBAR--------------------------------------------------------------------------------------------------*/
 #navbar-head {
   background-color: #000;
 }
@@ -17,12 +65,14 @@ a {
   margin-top: 10px;
 }
 
-/*---------------------------Slider de Bootstrap Personalizado---------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------SLIDER--------------------------------------------------------------------------------------------------*/
 .carousel-inner {
   max-height: 34rem;
 }
 
-/*----------------------------------Codigo de Footer--------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------------------------*/
 footer {
   width: 100%;
   padding: 50px 0px;
@@ -80,38 +130,20 @@ footer .box_copyrights hr {
   color: #ffffff;
 }
 
-/*------------------Background de las Sections de Inicio (Trending & Upcoming)----------------------*/
-#trending-items {
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------HEADER (TRENDING-GAMES & UPCOMING-GAMES)--------------------------------------------------------------------------------------------------*/
+.shop-intro {
+  margin-left: 50px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ----------------------------------------------------------------------- (INICIO)--------------------------------------------------------------------------------------------------*/
+#trending-items, #next-games {
   background-image: url(../img/backgroundsection3.jpg);
   background-size: cover;
   border-radius: 7px;
 }
-
-#next-games {
-  background-image: url(../img/backgroundsection2.jpg);
-  background-size: cover;
-  border-radius: 7px;
-}
-
-/*---------------------------------Titulo de las Cards del Inicio-----------------------------------*/
-.card-title {
-  text-align: center;
-  font-size: 30px;
-  margin: 0;
-  padding-top: 15px;
-  font-weight: bold;
-  font-family: "Robotic", sans-serif;
-}
-
-.card-titles {
-  text-align: center;
-  font-size: 30px;
-  margin: 0;
-  font-weight: bold;
-  font-family: "Robotic", sans-serif;
-}
-
-.section {
+#trending-items .section, #next-games .section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -119,8 +151,11 @@ footer .box_copyrights hr {
   align-items: center;
   margin: 0;
 }
-
-.content {
+#trending-items .section .content:hover, #next-games .section .content:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transform: translate(0px, -8px);
+}
+#trending-items .section .content, #next-games .section .content {
   width: auto;
   margin: 40px;
   box-sizing: border-box;
@@ -132,54 +167,31 @@ footer .box_copyrights hr {
   transition: 0.4s;
   background: white;
 }
-
-.content:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  transform: translate(0px, -8px);
+#trending-items .section .content .card-title, #next-games .section .content .card-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 15px;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
 }
-
-h6 {
-  font-size: 26px;
+#trending-items .section .content .card-titles, #next-games .section .content .card-titles {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#trending-items .section .content h6, #next-games .section .content h6 {
+  font-size: 24px;
   text-align: center;
   color: rgb(233, 10, 10);
   margin: 0;
   padding-bottom: 8px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-family: "Signika", sans-serif;
 }
-
-.card-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0;
-  margin-right: 20px;
-}
-.card-list li {
-  padding: 5px;
-}
-
-.fa {
-  font-size: 26px;
-  transition: 0.4s;
-}
-
-.fa-solid {
-  padding-top: 5px;
-  font-size: 20px;
-}
-
-.checked {
-  color: rgb(255, 146, 5);
-}
-
-.fa:hover {
-  transform: scale(1.3);
-  transition: 0.6s;
-}
-
-.buy-1 {
+#trending-items .section .content .buy-1, #next-games .section .content .buy-1 {
   text-align: center;
   font-size: 24px;
   color: #fff;
@@ -192,54 +204,35 @@ h6 {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
-@media (max-width: 1000px) {
-  .content {
-    width: 35%;
-  }
-
-  .offert-menu {
-    width: 85%;
-  }
-
-  .offert-menus {
-    width: 95%;
-  }
+#trending-items .section .content .card-list, #next-games .section .content .card-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  margin-right: 20px;
 }
-@media (max-width: 750px) {
-  .content {
-    width: 55%;
-  }
-
-  .offert-menu {
-    width: 85%;
-  }
-
-  .offert-menus {
-    width: 85%;
-  }
-
-  .contact-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+#trending-items .section .content .card-list li, #next-games .section .content .card-list li {
+  padding: 5px;
 }
-@media (max-width: 500px) {
-  .content {
-    width: 85%;
-  }
+#trending-items .section .content .card-list li .fa, #next-games .section .content .card-list li .fa {
+  font-size: 26px;
+  transition: 0.4s;
+}
+#trending-items .section .content .card-list li .fa-solid, #next-games .section .content .card-list li .fa-solid {
+  padding-top: 5px;
+  font-size: 20px;
+}
+#trending-items .section .content .card-list li .checked, #next-games .section .content .card-list li .checked {
+  color: rgb(255, 146, 5);
+}
+#trending-items .section .content .card-list li .fa:hover, #next-games .section .content .card-list li .fa:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+}
 
-  .contact-wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 1200px) {
-  .offert-menus {
-    width: 85%;
-  }
-}
-/*---------------------------Banners de Ofertas en Inicio-------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------OFFERT-BANNERS (INICIO)--------------------------------------------------------------------------------------------------*/
 .offert-menu {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -250,11 +243,8 @@ h6 {
   padding-bottom: 110px;
 }
 
-.trending-intro {
-  margin-left: 50px;
-}
-
-/*-----------------------------------Formulario de Contacto-------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------CONTACT-FORM--------------------------------------------------------------------------------------------------*/
 .container-form {
   max-width: 550px;
   margin-left: auto;
@@ -265,6 +255,7 @@ h6 {
   font-size: 3em;
   font-weight: bold;
   padding-bottom: 5px;
+  text-shadow: 0px 0px 1px black;
 }
 .container-form .contact-wrap * {
   padding: 1em;

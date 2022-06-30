@@ -10,7 +10,54 @@ a{
     text-decoration: none;
 }
 
-/*---------------------------Navbar de Bootstrap Personalizado----------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------MEDIA-QUERYS--------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1000px){
+    .content{
+        width: 35%;
+    }
+    .offert-menu{
+        width: 85%;
+    }
+    .offert-menus{
+        width: 95%;
+    }
+}
+
+@media (max-width:750px){
+    .content{
+        width: 55%;
+    }
+    .offert-menu{
+        width: 85%;
+    }
+    .offert-menus{
+        width: 85%;
+    }
+}
+
+@media (max-width:500px){
+    .content{
+        width: 85%;
+    }
+    .contact-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:1200px){
+    .offert-menus{
+        width: 85%;
+    }
+    .offert-menu{
+        width: 85%;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------NAVBAR--------------------------------------------------------------------------------------------------*/
 
 #navbar-head{
     background-color: #000;
@@ -22,13 +69,15 @@ a{
     }
 }
 
-/*---------------------------Slider de Bootstrap Personalizado---------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------SLIDER--------------------------------------------------------------------------------------------------*/
 
 .carousel-inner{
     max-height: 34rem;
 }
 
-/*----------------------------------Codigo de Footer--------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------------------------*/
 
 footer{
     width: 100%;
@@ -89,169 +138,114 @@ footer{
     }
 }
 
-/*------------------Background de las Sections de Inicio (Trending & Upcoming)----------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------HEADER (TRENDING-GAMES & UPCOMING-GAMES)--------------------------------------------------------------------------------------------------*/
 
-#trending-items{
+.shop-intro{
+    margin-left: 50px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ----------------------------------------------------------------------- (INICIO)--------------------------------------------------------------------------------------------------*/
+
+#trending-items, #next-games{
     background-image: url(../img/backgroundsection3.jpg);
     background-size: cover;
     border-radius: 7px;
-}
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        .content:hover{
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            transform: translate(0px, -8px);
+        }
+        .content{
+            width: auto;
+            margin: 40px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+            transition: .4s;
+            background: white;
+            .card-title{
+                text-align: center;
+                font-size: 30px;
+                margin: 0;
+                padding-top: 15px;
+                font-weight: 700;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .card-titles{
+                text-align: center;
+                font-size: 30px;
+                margin: 0;
+                font-weight: 700;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            h6{
+                font-size: 24px;
+                text-align: center;
+                color: rgb(233, 10, 10);
+                margin: 0;
+                padding-bottom: 8px;
+                font-weight: 400;
+                font-family: 'Signika', sans-serif;
+            }
+            .buy-1{
+                text-align: center;
+                font-size: 24px;
+                color: #fff;
+                width: 100%;
+                padding: 15px;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                margin-top: 5px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .card-list{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 0;
+                margin-right: 20px;
+                li{
+                    padding: 5px;
+                   .fa{
+                        font-size: 26px;
+                        transition: .4s;
+                    }
+                    .fa-solid{
+                        padding-top: 5px;
+                        font-size: 20px;
+                    }
 
-#next-games{
-    background-image: url(../img/backgroundsection2.jpg);
-    background-size: cover;
-    border-radius: 7px;
-}
+                    .checked{
+                        color: rgb(255, 146, 5);
+                    }
 
-/*---------------------------------Titulo de las Cards del Inicio-----------------------------------*/
-
-.card-title{
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    padding-top: 15px;
-    font-weight: bold;
-    font-family: 'Robotic', sans-serif;
-}
-
-.card-titles{
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    font-weight: bold;
-    font-family: 'Robotic', sans-serif;
-}
-
-
-
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.content{
-    width: auto;
-    margin: 40px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
-    transition: .4s;
-    background: white;
-}
-
-.content:hover{
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    transform: translate(0px, -8px);
-}
-
-h6{
-    font-size: 26px;
-    text-align: center;
-    color: rgb(233, 10, 10);
-    margin: 0;
-    padding-bottom: 8px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.card-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    margin-right: 20px;
-    li{
-        padding: 5px;
+                    .fa:hover{
+                        transform: scale(1.3);
+                        transition: .6s;
+                    } 
+                }
+            }
+        }
     }
 }
 
-.fa{
-    font-size: 26px;
-    transition: .4s;
-}
-
-.fa-solid{
-    padding-top: 5px;
-    font-size: 20px;
-}
-
-.checked{
-    color: rgb(255, 146, 5);
-}
-
-.fa:hover{
-    transform: scale(1.3);
-    transition: .6s;
-}
-
-.buy-1{
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
-    width: 100%;
-    padding: 15px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-@media (max-width:1000px){
-    .content{
-        width: 35%;
-    }
-    .offert-menu{
-        width: 85%;
-    }
-    .offert-menus{
-        width: 95%;
-    }
-}
-
-@media (max-width:750px){
-    .content{
-        width: 55%;
-    }
-    .offert-menu{
-        width: 85%;
-    }
-    .offert-menus{
-        width: 85%;
-    }
-    .contact-wrap{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width:500px){
-    .content{
-        width: 85%;
-    }
-    .contact-wrap{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width:1200px){
-    .offert-menus{
-        width: 85%;
-    }
-}
-
-/*---------------------------Banners de Ofertas en Inicio-------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------OFFERT-BANNERS (INICIO)--------------------------------------------------------------------------------------------------*/
 
 .offert-menu{
     padding-top: 60px;
@@ -263,11 +257,8 @@ h6{
     padding-bottom: 110px;
 }
 
-.trending-intro{
-    margin-left: 50px;
-}
-
-/*-----------------------------------Formulario de Contacto-------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------CONTACT-FORM--------------------------------------------------------------------------------------------------*/
 
 .container-form{
     max-width: 550px;
@@ -278,6 +269,7 @@ h6{
         font-size: 3em;
         font-weight: bold;
         padding-bottom: 5px;
+        text-shadow: 0px 0px 1px black;
     }
     .contact-wrap{
         *{
